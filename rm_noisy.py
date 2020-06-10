@@ -13,9 +13,9 @@ args = parser.parse_args()
 def rm_noise(file_in, file_out):
     f1 = codecs.open(file_in, "r", "utf-8")
     f2 = codecs.open(file_out, 'w', 'utf-8')
-
+    noise = ["|", "http", "&", "#", "(", ")"]
     for sents in f1:
-        if len(sents.split()) < 6 or "|" in sents or "http" in sents or "#" in sents or "&" in sents or "(" in sents or ")" in sents:
+        if any(t in sents for t in noise):
             continue
         f2.write(sents)
 
