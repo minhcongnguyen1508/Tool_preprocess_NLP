@@ -2,7 +2,7 @@
 
 # Description:
 
-My tools preprocess for english-khmer-vietnamese language
+My tools preprocess for english-khmer-vietnamese
 
 # Detail:
 
