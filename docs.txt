@@ -1,0 +1,16 @@
+# run file:
+Model sử dụng CRF train với 5k docs. > 40k sentence train trong 100i
+
+# example:
+
+-w : model path
+-i: input path
+-o: output path
+
+
+#example: ?\
+$ python km_tokenizer.py -w model/crf_model_5k-100i.sav -i data/google.en-km.km -o data/google.en-km.km.tok
+
+# vi-en_tokenizer
+
+$ python vi-en_tokenizer.py -i data/google.en-km.km -o data/google.en-km.km.tok
