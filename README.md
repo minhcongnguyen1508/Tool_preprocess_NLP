@@ -26,4 +26,4 @@ python3.+
 
 nltk
 
-# Example hin file docx.txt
+# Example in file docx.txt
